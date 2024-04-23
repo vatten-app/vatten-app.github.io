@@ -3,6 +3,8 @@
     link: /blog/
   - name: Contact
     link: /contact/
+  - name: Privacy Policy
+    link: /privacy/
 - links:
   - name: Facebook
     link: https://facebook.com/cloudcannon/
