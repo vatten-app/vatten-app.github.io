@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: Hydra Template
-url: "https://proud-alligator.cloudvent.net"
+title: The Vatten App
+url: "vatten.app"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -10,20 +10,20 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Product marketing template for Jekyll.
+description: Fitness Unleashed, Journeys Preserved and exclusively on the Apple platforms
 author:
   name:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Hydra Template
+  name: The Vatten App
   links:
-    - https://github.com/CloudCannon/hydra-jekyll-template
+    - https://vatten.app/
 
 # -----
 # Build
 
-timezone: Etc/UTC
+timezone: Etc/EST
 
 collections:
   staff_members:

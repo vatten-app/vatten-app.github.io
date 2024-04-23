@@ -1,13 +1,11 @@
 ---
 date: 2024-04-22
-title: First Release
+title: First Release Overview
 categories:
     - release
 author_staff_member:
     - Michael T
 ---
-
-## Overview
 
 ![Overview]({{ site.baseurl }}/images/overview.png)
 
