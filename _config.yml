@@ -2,7 +2,7 @@
 # Site
 
 title: The Vatten App
-url: "vatten.app"
+url: "https://vatten.app"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -80,6 +80,10 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
+  - pricing.html
+  - about.html
+  - edit.sh
+
 
 # -----------
 # CloudCannon
