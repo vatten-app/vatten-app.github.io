@@ -84,6 +84,10 @@ exclude:
   - about.html
   - edit.sh
 
+include:
+ - .well-known
+ - .well-known/apple-app-site-association
+
 
 # -----------
 # CloudCannon
