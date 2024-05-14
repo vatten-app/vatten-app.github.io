@@ -7,6 +7,10 @@
         ],
         "components" : [
           {
+            "?" : {
+              "dat" : "?*",
+              "sha" : "?*"
+            },
             "/" : "/links/buoy/*",
             "comment" : "This is for linking and sharing buoys"
           }
