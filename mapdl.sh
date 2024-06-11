@@ -1,0 +1,1 @@
+curl -g "https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v12/static/pin-s-v+000(-79.48710578196453,43.68743337638443)/-79.48710578196453,43.68743337638443,15/1280x791@2x?access_token=pk.eyJ1IjoidmF0dGVuLWFwcCIsImEiOiJjbHg4MjJ0aHgyOW42MmlxMW53bWF0YWxjIn0.L52v-2bR-_-aJ8VoGY1tqA" --output map.png
