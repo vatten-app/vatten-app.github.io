@@ -48,7 +48,7 @@ downloadLnk: https://apps.apple.com/ca/app/vatten/id6478919573
     const transientData = JSON.parse(decodedData);
 
     if (dataAssert(transientData)) {
-      setMapURL("mapbox-img", -79.48710578196453, 43.68743337638443);
+      setMapURL("mapbox-img", transientData.long, transientData.lat);
       addEventListener("DOMContentLoaded", (event) => {
         setNote(transientData.hid, transientData.note);
       });
