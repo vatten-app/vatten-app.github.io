@@ -1,25 +1,45 @@
 ---
 title: Vatten Buoys
-description: Someone made a note for this buoy. Please install the vatten app to see more details about this note
+description: Uncover Nearby Hidden Gems on the Vatten
 image: ../images/vattenBuoyWeb.jpg
 
 sitemap: false
-heading: Link to your best spots on the map
 downloadLnk: https://apps.apple.com/ca/app/vatten/id6478919573
 ---
 
-<div class="cta button alt"><a href="{{ page.downloadLnk }}" class="appleStoreLogo">  </a></div>
+<div class="button alt">
+  <a id="app-open" href="{{ page.downloadLnk }}" class="openInApp">
+  </a>
+</div>
 <h2 id="buoy-human-id"></h2>
 <div id="buoy-note-id" class="buoyNote"></div>
 <img id="mapbox-img" \>
+<div class="cta button alt"><a href="{{ page.downloadLnk }}" class="appleStoreLogo">  </a></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
 
 <script>
+
   function setMapURL(imgId, long, lat) {
     const elem = document.getElementById(imgId);
     const apiKey = "pk.eyJ1IjoidmF0dGVuLWFwcCIsImEiOiJjbHg4MjJ0aHgyOW42MmlxMW53bWF0YWxjIn0.L52v-2bR-_-aJ8VoGY1tqA"
     elem.src = `https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v12/static/pin-l-v+000(${long},${lat})/${long},${lat},15/1280x791@2x?access_token=${apiKey}`
+  }
+
+  function httpURLtoAppLink(url, isDebugging) {
+    var schema = "com.realmtai.Blackbread";
+    if (isDebugging) {
+      schema = "com.realmtai.Blackbread.dev";
+    }
+    return url
+      .replace("https", schema)
+      .replace("http", schema)
+  }
+
+  function setOpenAppURL(elemid, url, isDebugging) {
+    const openAppButton = document.getElementById(elemid);
+    const appURL = httpURLtoAppLink(url, isDebugging);
+    openAppButton.href = appURL;
   }
 
   function setNote(buoyid, buoyNoteMD) {
@@ -43,11 +63,15 @@ downloadLnk: https://apps.apple.com/ca/app/vatten/id6478919573
 
   function load() {
     const params = new URLSearchParams(document.location.search);
+    const urlLoc = document.URL;
+
     const dat = params.get("dat");
+    const isDebugging = params.get("d");
     const decodedData = window.atob(dat);
     const transientData = JSON.parse(decodedData);
 
     if (dataAssert(transientData)) {
+      setOpenAppURL("app-open", urlLoc, isDebugging)
       setMapURL("mapbox-img", transientData.long, transientData.lat);
       addEventListener("DOMContentLoaded", (event) => {
         setNote(transientData.hid, transientData.note);
