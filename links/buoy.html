@@ -8,7 +8,7 @@ downloadLnk: https://apps.apple.com/ca/app/vatten/id6478919573
 ---
 
 <div class="button alt">
-  <a id="app-open" href="{{ page.downloadLnk }}" class="openInApp">
+  <a id="app-open" target="_blank" href="{{ page.downloadLnk }}" class="openInApp">
   </a>
 </div>
 <h2 id="buoy-human-id"></h2>
@@ -39,7 +39,7 @@ downloadLnk: https://apps.apple.com/ca/app/vatten/id6478919573
   function setOpenAppURL(elemid, url, isDebugging) {
     const openAppButton = document.getElementById(elemid);
     const appURL = httpURLtoAppLink(url, isDebugging);
-    openAppButton.href = appURL;
+    openAppButton.href = url;
   }
 
   function setNote(buoyid, buoyNoteMD) {
