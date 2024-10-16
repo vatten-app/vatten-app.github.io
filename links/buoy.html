@@ -1,20 +1,20 @@
 ---
-title: Vatten Buoys
-description: Uncover Nearby Hidden Gems on the Vatten
+title: Buoys on the Vatten app
+description: The App didn't open? Clikc open in the Vatten for the latest information.
 image: ../images/vattenBuoyWeb.jpg
 
 sitemap: false
 downloadLnk: https://apps.apple.com/ca/app/vatten/id6478919573
 ---
 
-<div class="cta button alt"><a href="{{ page.downloadLnk }}" class="appleStoreLogo">  </a></div>
-<h2 id="buoy-human-id"></h2>
-<div id="buoy-note-id" class="buoyNote"></div>
-<img id="mapbox-img" \>
 <div class="button alt">
   <a id="app-open" href="javascript:void(0);" class="openInApp">
   </a>
 </div>
+<h2 id="buoy-human-id"></h2>
+<div id="buoy-note-id" class="buoyNote"></div>
+<img id="mapbox-img" \>
+<div class="cta button alt"><a href="{{ page.downloadLnk }}" class="appleStoreLogo">  </a></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
 
@@ -23,7 +23,7 @@ downloadLnk: https://apps.apple.com/ca/app/vatten/id6478919573
   function setMapURL(imgId, long, lat) {
     const elem = document.getElementById(imgId);
     const apiKey = "pk.eyJ1IjoidmF0dGVuLWFwcCIsImEiOiJjbHg4MjJ0aHgyOW42MmlxMW53bWF0YWxjIn0.L52v-2bR-_-aJ8VoGY1tqA"
-    elem.src = `https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v12/static/pin-l-v+000(${long},${lat})/${long},${lat},15/1280x791@2x?access_token=${apiKey}`
+    elem.src = `https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v12/static/pin-l-v+000(${long},${lat})/${long},${lat},15/600x600@2x?access_token=${apiKey}`
   }
 
   function setOpenAppURL(elemid, url, isDebugging) {
