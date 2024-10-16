@@ -12,9 +12,8 @@ downloadLnk: https://apps.apple.com/ca/app/vatten/id6478919573
 <div id="buoy-note-id" class="buoyNote"></div>
 <img id="mapbox-img" \>
 <div class="button alt">
-    <button id="app-open">
-      open this link
-    </button>
+  <a id="app-open" href="javascript:void(0);" class="openInApp">
+  </a>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
@@ -25,16 +24,6 @@ downloadLnk: https://apps.apple.com/ca/app/vatten/id6478919573
     const elem = document.getElementById(imgId);
     const apiKey = "pk.eyJ1IjoidmF0dGVuLWFwcCIsImEiOiJjbHg4MjJ0aHgyOW42MmlxMW53bWF0YWxjIn0.L52v-2bR-_-aJ8VoGY1tqA"
     elem.src = `https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v12/static/pin-l-v+000(${long},${lat})/${long},${lat},15/1280x791@2x?access_token=${apiKey}`
-  }
-
-  function httpURLtoAppLink(url, isDebugging) {
-    var schema = "com.realmtai.Blackbread";
-    if (isDebugging) {
-      schema = "com.realmtai.Blackbread.dev";
-    }
-    return url
-      .replace("https", schema)
-      .replace("http", schema)
   }
 
   function setOpenAppURL(elemid, url, isDebugging) {
