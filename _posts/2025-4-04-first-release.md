@@ -1,11 +1,20 @@
 ---
-date: 2024-04-22
-title: First Release Overview
+date: 2025-04-04
+title: The Outdoor Release Overview
+downloadLnk: https://apps.apple.com/ca/app/vatten/id6478919573
 categories:
     - release
 author_staff_member:
     - Michael T
 ---
+
+# 🔎 Discovery – Find the best lakes, rivers, and beaches near you.
+# 🌊 Activities & Services – Connect with local guides, rent gear, or book experiences from trusted providers.
+# 🏆 Achievements – Track your adventures and share your best moments with friends.
+
+Download Vatten and make every day on the water unforgettable!
+
+<div class="cta button alt"><a href="{{ page.downloadLnk }}" class="appleStoreLogo">  </a></div>
 
 ![Overview]({{ site.baseurl }}/images/overview.png)
 

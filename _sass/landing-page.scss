@@ -1,62 +1,119 @@
 .bottom-cta {
-	background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%);
-	color: #fff;
-	text-align: center;
-	margin: 0;
-	padding: 100px 0;
+  background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 100px 0;
 
-	h2 {
-		margin-bottom: 50px;
-	}
+  h2 {
+    margin-bottom: 50px;
+  }
 }
 
 .testimonial {
-	background: #f5f5f5;
-	margin: 0;
-	padding: 100px 0;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 100px 0;
 
-	.testimonial-block {
-		max-width: 750px;
-		width: 98%;
-		margin: 0 auto;
+  .testimonial-block {
+    max-width: 750px;
+    width: 98%;
+    margin: 0 auto;
 
-		@media #{$tablet} {
-			@include flexbox;
+    @media #{$tablet} {
+      @include flexbox;
 
-			blockquote {
-				-webkit-flex: 1;
-				flex: 1;
-			}
-		}
-	}
+      blockquote {
+        -webkit-flex: 1;
+        flex: 1;
+      }
+    }
+  }
 }
 
 .hero {
-	color: #ffffff;
-	text-align: center;
-	background: linear-gradient(to bottom, $middle-gradient-color 0%, $secondary-brand-color 100%) no-repeat #a05fb7;
-	padding-top: 50px;
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(to bottom, $middle-gradient-color 0%, $secondary-brand-color 100%) no-repeat #a05fb7;
+  padding-top: 50px;
 
-	p {
-		color: #fff;
-	}
+  p {
+    color: #fff;
+  }
+}
+
+
+.user_group_container {
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+
+.user_group_column {
+  flex: 1;
+  transition: flex 0.4s ease, opacity 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.user_group_left {
+  background-image: url('https://images.pexels.com/photos/1172064/pexels-photo-1172064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.user_group_right {
+  background-image: url('https://i0.wp.com/imagecityblog.com/wp-content/uploads/2022/09/crop-hand-writing-notebook-near-camera-coffee_23-2147823697.jpeg?resize=626%2C418&ssl=1');
+}
+
+/* Expand hovered user_group_column */
+.user_group_container:hover .user_group_left:hover,
+.user_group_container:hover .user_group_right:hover {
+  flex: 2;
+  opacity: 1;
+}
+
+/* Shrink and dim the unhovered one */
+.user_group_container:hover .user_group_left:not(:hover),
+.user_group_container:hover .user_group_right:not(:hover) {
+  flex: 0.8;
+  opacity: 0.5;
+}
+
+/* Optional: user_group_overlay for text contrast */
+.user_group_overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.user_group_column span {
+  z-index: 1;
+  position: relative;
 }
 
 
 @media #{$desktop} {
-	.flex {
-		@include flexbox;
-		align-items: center;
-		flex-direction: row;
+  .flex {
+    @include flexbox;
+    align-items: center;
+    flex-direction: row;
 
-		.text, .image {
-			-webkit-flex: 1;
-			flex: 1;
-			padding: 0 20px;
-		}
-	}
+    .text, .image {
+      -webkit-flex: 1;
+      flex: 1;
+      padding: 0 20px;
+    }
+  }
 
-	.content section:nth-child(even) .flex {
-		flex-direction: row-reverse;
-	}
+  .content section:nth-child(even) .flex {
+    flex-direction: row-reverse;
+  }
 }

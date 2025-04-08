@@ -11,3 +11,5 @@ group :jekyll_plugins do
 end
 
 gem "webrick"
+
+gem "jekyll-compose", "~> 0.12.0"
