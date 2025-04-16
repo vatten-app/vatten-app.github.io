@@ -4,9 +4,14 @@ title: Leverage The Vatten App Platform
 date: 2025-03-28 19:08 +0000
 ---
 
+You receive 100% of your money for your service!
+==
+
 ![Overview]({{ site.baseurl }}/images/vPlatform/04-08-2025_08-48-17_canoe.jpg)
 
 ### Enjoy hassle-free outdoor fun with our convenient watercraft delivery and pickup service.
+
+[Become a Merchant]( {% post_url 2025-04-08-merchant-signup %})
 
 Kayak, Canoe & Paddle Board Rentals
 
@@ -25,6 +30,8 @@ On demand dog sitting service
 ![Overview]({{ site.baseurl }}/images/vPlatform/04-08-2025_09-03-07_firewood.jpg)
 
 ### Convenient Delivery Services – Simplify Your Needs
+[Become a Merchant]( {% post_url 2025-04-08-merchant-signup %})
+
 Fast, reliable, and convenient deliveries tailored for your lifestyle.
 
 Medical Delivery
@@ -43,6 +50,8 @@ Simplify your life—book our reliable delivery services today!
 
 ### Convenient Pickup – Simplify Your Life
 Fast, reliable services tailored for your needs.
+
+[Become a Merchant]( {% post_url 2025-04-08-merchant-signup %})
 
 Backcountry Drone Package Pickup
 * Safe and efficient package retrieval from remote locations.

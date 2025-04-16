@@ -63,11 +63,11 @@
 }
 
 .user_group_left {
-  background-image: url('https://images.pexels.com/photos/1172064/pexels-photo-1172064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-image: url('/images/vPlatform/usingTheVattenApp.png');
 }
 
 .user_group_right {
-  background-image: url('https://i0.wp.com/imagecityblog.com/wp-content/uploads/2022/09/crop-hand-writing-notebook-near-camera-coffee_23-2147823697.jpeg?resize=626%2C418&ssl=1');
+  background-image: url('/images/vPlatform/merchantRentalDelivery.png');
 }
 
 /* Expand hovered user_group_column */
@@ -89,7 +89,7 @@
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 0;
   pointer-events: none;
 }
