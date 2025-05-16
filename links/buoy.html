@@ -1,6 +1,6 @@
 ---
 title: Buoys on the Vatten app
-description: The App didn't open? Clikc open in the Vatten for the latest information.
+description: Click on the Open in the Vatten app for the latest information.
 image: ../images/vattenBuoyWeb.jpg
 
 sitemap: false
@@ -19,6 +19,10 @@ downloadLnk: https://apps.apple.com/ca/app/vatten/id6478919573
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
 
 <script>
+
+  function atou(str) {
+    return decodeURIComponent(escape(atob(str)));
+  }
 
   function setMapURL(imgId, long, lat) {
     const elem = document.getElementById(imgId);
@@ -63,7 +67,7 @@ downloadLnk: https://apps.apple.com/ca/app/vatten/id6478919573
 
     const dat = params.get("dat");
     const isDebugging = params.get("d");
-    const decodedData = window.atob(dat);
+    const decodedData = window.atou(dat);
     const transientData = JSON.parse(decodedData);
 
     if (dataAssert(transientData)) {
