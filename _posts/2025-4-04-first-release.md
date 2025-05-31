@@ -18,6 +18,12 @@ Download Vatten and make every day on the water unforgettable!
 
 ![Overview]({{ site.baseurl }}/images/overview.png)
 
+## Explore Nature's Stunning Beauty
+
+Embark on effortless outdoor adventures with the Vatten app, your all-in-one companion for paddling and relaxing by the water. More than just a tracking tool, Vatten lets you discover and rent kayaks or beach umbrellas right from your phone—no lines, no hassle. Whether you're setting out to explore a serene lake or simply soaking up the sun on the shoreline, Vatten helps you find the gear you need, when and where you need it. With a tap, browse nearby rental options, check availability, and start your day on the water or under a shady umbrella. Adventure or leisure, Vatten brings it all together—making your time outdoors seamless, spontaneous, and unforgettable.
+
+
+![Overview]({{ site.baseurl }}/images/buoyView.png)
 
 ## Privacy, Pure and Simple
 
